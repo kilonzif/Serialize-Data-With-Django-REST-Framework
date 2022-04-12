@@ -79,6 +79,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'cloudinary',
     'corsheaders',
+    'rest_framework_simplejwt',
 ]
 
 CORS_ALLOWED_ORIGINS = [
@@ -142,6 +143,7 @@ WSGI_APPLICATION = 'django_api.wsgi.application'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
 
