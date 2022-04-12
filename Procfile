@@ -1,0 +1,1 @@
+web: gunicorn --timeout 3600 django_api.wsgi --log-file -
