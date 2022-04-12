@@ -78,10 +78,23 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'cloudinary',
+    'corsheaders',
+]
+
+CORS_ALLOWED_ORIGINS = ['*']
+
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
 ]
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

@@ -30,3 +30,18 @@ set:
 
 admin:
 	python manage.py createsuperuser --username admin --email admin@admin.com
+
+hadmin:
+	heroku run python manage.py createsuperuser --username admin --email admin@admin.com
+
+hmake:
+	heroku run python manage.py makemigrations
+
+hmigrate:
+	heroku run python manage.py migrate
+
+pushdb:
+	heroku pg:push api DATABASE_URL
+
+reset:
+	heroku pg:reset DATABASE
