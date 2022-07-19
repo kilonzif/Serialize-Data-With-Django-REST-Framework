@@ -1,0 +1,1 @@
+{"buildTargets":["activate","admin","create","drop","freeze","hadmin","hmake","hmigrate","live","make","migrate","pushdb","reset","run","set","test"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
